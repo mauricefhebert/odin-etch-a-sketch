@@ -1,0 +1,53 @@
+* {
+  --main-color: #eeeeee;
+  --secondary-color: #463f3a;
+  --action-color: #ec4e20;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  color: #bcb8b1;
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 32em;
+  height: 32em;
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+}
+
+/*
+modulo egal a lui meme
+3 = 9
+4 = 15
+5 = 25
+6 = 36
+7 = 49
+8 = 64
+9 = 81
+10 = 100
+*/
+
+.grid-item {
+  border: 1px solid black;
+}
