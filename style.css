@@ -31,23 +31,10 @@ body {
   width: 32em;
   height: 32em;
   border: 3px solid black;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
+  display: flex;
 }
-
-/*
-modulo egal a lui meme
-3 = 9
-4 = 15
-5 = 25
-6 = 36
-7 = 49
-8 = 64
-9 = 81
-10 = 100
-*/
-
 .grid-item {
   border: 1px solid black;
+  width: 100%;
+  display: grid;
 }
