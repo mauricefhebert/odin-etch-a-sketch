@@ -13,6 +13,10 @@ body {
   background-color: var(--main-color);
 }
 
+.header {
+  text-align: center;
+}
+
 .main {
   flex: 1;
   display: flex;
@@ -37,14 +41,21 @@ body {
 .grid-item {
   width: 100%;
   display: grid;
+  border: 1px solid black;
 }
 
 .setting {
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1em;
   height: 32em;
+}
+
+#color {
+}
+
+#bntReset {
+  padding: 0.5em 1em;
 }

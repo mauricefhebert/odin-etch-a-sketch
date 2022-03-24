@@ -9,15 +9,18 @@
     <title>Etch-a-sketch</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <h1>Etch-a-sketch</h1>
+    </header>
     <main class="main">
       <div class="container"></div>
       <div class="setting">
         <p>Change grid size</p>
-        <input type="range" name="" id="" />
+        <input type="range" name="" id="grid-size-range" min="16" max="64" value="16" />
+        <span id="textInput">16 x 16</span>
         <p>Choose a color</p>
         <input type="color" name="color" id="color" />
-        <button>Clear</button>
+        <button id="bntReset" onclick="reset();">Reset</button>
       </div>
     </main>
     <footer class="footer"><p>Copyright © Maurice Filiatreault Hébert 2022</p></footer>
